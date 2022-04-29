@@ -3,11 +3,13 @@ const sizePicker = document.querySelector('#sizePicker');
 
 // Select size input
 const pixelCanvas = document.querySelector('#pixelCanvas');
+
 // select clear button
 let resetButton = document.querySelector('.reset-button');
 
 // to fill the whole table 
 const fillButton = document.querySelector('.fill-button');
+
 
 // When size is submitted by the user, call makeGrid()
 function makeGrid() {
@@ -28,9 +30,9 @@ function makeGrid() {
                 const colorPicker = document.querySelector('#colorPicker').value;
                 this.style.backgroundColor = colorPicker;
             });
-        };
-    };
-};
+        }
+    }
+}
 
 makeGrid();
 
@@ -39,16 +41,13 @@ sizePicker.addEventListener('submit', function(e) {
     //prevents submitting action
     e.preventDefault();
     makeGrid();
-
 });
-
 
 
 //to clear the table and reset
 resetButton.addEventListener('click', function(e) {
     e.preventDefault();
     pixelCanvas.remove();
-
 });
 
 
@@ -58,6 +57,7 @@ fillButton.addEventListener('click', function(e) {
     const color = document.querySelector('#colorPicker').value;
     pixelCanvas.querySelectorAll('td').forEach(td => td.style.backgroundColor = color);
 });
+
 
 // removes color from the grid when clicked
 pixelCanvas.addEventListener('dblclick', function(e) {
