@@ -17,21 +17,28 @@
             <input type="number" id="inputHeight" name="height" min="1" value="1">
             <label for="width">Grid Width</label>
             <input type="number" id="inputWidth" name="width" min="1" value="1">
-            <input type="submit">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset" class="reset-button">
         </form>
 
         <h2>Pick A Color</h2>
-        <input type="color" id="colorPicker">
+        <input type="color" id="colorPicker" value="#0000ff">
+        <div class="modes">
+            <input type="button" class="fill-button" value="Fill Table">
+
+        </div>
+
     </section>
 
     <h2>Design Canvas</h2>
-    <table id="pixelCanvas"></table>
+    <small>
+    P.S: Double Click to clear color  and Click to add color </small>
+    <table id="pixelCanvas">
+    </table>
 
-    <h2> Modes for the Canvas </h2>
-    <form class="canvas-modes">
-        <input type="button" value="clear" class="mode-clear">
-        <input type="button" value="fill" class="mode-fill">
-    </form>
+
+
+
 
     <script src="designs.js"></script>
 </body>
