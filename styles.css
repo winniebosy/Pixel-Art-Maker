@@ -1,5 +1,6 @@
 body {
     text-align: center;
+    background-color:
 }
 
 h1 {
@@ -33,8 +34,24 @@ tr {
 
 td {
     width: 20px;
+    height: 20px;
 }
 
 input[type=number] {
     width: 6em;
+    border: 1px solid #dcdcdc;
+}
+
+.modes {
+    display: flex;
+    max-width: 20%;
+    height: auto;
+    padding: 1rem;
+    margin: auto;
+    justify-content: center;
+    align-content: center;
+}
+
+.fill-button {
+    margin: 0.5rem;
 }
